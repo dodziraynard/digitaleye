@@ -1,0 +1,12 @@
+{% extends 'webapp/base_template.html' %}
+
+{% block body %}   
+    <form action="" method="POST" enctype="multipart/form-data">
+        <h1>Merge PDFs</h1>
+        {% csrf_token %}
+        
+        <input type="file" name="pdfs" id="pdfs" multiple accept=".pdf">
+
+        <button type="submit">Submit</button>
+    </form>
+{% endblock body %}

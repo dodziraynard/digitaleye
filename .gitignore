@@ -1,0 +1,20 @@
+### Django ###
+*.pyc
+/db.sqlite3
+__pycache__/
+/.vscode/
+local_settings.py
+migrations/
+resources/uploads/
+*.log
+*.pot
+
+resources/temp/*
+resources/processed/*
+
+
+# Sass
+.sass-cache
+*.map
+
+.idea

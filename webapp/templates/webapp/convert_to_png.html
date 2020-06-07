@@ -1,0 +1,15 @@
+{% extends 'webapp/base_template.html' %}
+
+{% block body %}
+    {% if url %}
+    <h1><a href="{{url}}" target="_blank">wait and download</a></h1>
+    {% endif %}
+    
+    <form action="" method="POST" enctype="multipart/form-data">
+        <h1>Convert to pngs</h1>
+        {% csrf_token %}
+        {{ form.as_p }}
+
+        <button type="submit">Submit</button>
+    </form>
+{% endblock body %}
