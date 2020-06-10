@@ -188,7 +188,6 @@ def merge_pdfs(dir_name, page_count):
 	merger.write(result_path)
 	merger.close()
 	return result_path
-	remove_temp_dirs()
 
 def zip_directory(output_dir_name, input_dir_name):
 	fs = FileSystemStorage()
