@@ -1,4 +1,4 @@
-{% extends 'webapp/base_template.html' %}
+{% extends 'processor/base_template.html' %}
 
 {% block body %}
     {% if url %}
@@ -6,10 +6,9 @@
     {% endif %}
     
     <form action="" method="POST" enctype="multipart/form-data">
-        <h1>Convert to selectable pdf</h1>
+        <h1>Remove background from pdf</h1>
         {% csrf_token %}
         <input type="file" name="pdf" required>
-
         <button type="submit">Submit</button>
     </form>
 {% endblock body %}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+
+    <style>
+        .big-file-upload{
+            height: 200px;
+            width: 200px;
+            border: 2px dashed gray;
+        }
+        .hide{
+            display: none;
+        }
+        .error_message{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    {% if request.error_message %}
+        <h1 class="error_message">{{request.error_message}}</h1>
+    {% endif %}
+    {% block body %}
+
+    {% endblock body %}
+
+    <br>
+    <br>
+    <a href="/">HOME</a>
+</body>
+</html>

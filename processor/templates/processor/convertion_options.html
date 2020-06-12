@@ -1,0 +1,30 @@
+{% extends 'processor/base_template.html' %}
+
+{% block body %}
+    <h1>Select option</h1>
+    <div>
+        <a href="{% url 'processor:convert_to_selectable_pdf' %}">Convert PDF to Selectable PDF</a>
+    </div>
+
+    <div>
+        <a href="{% url 'processor:remove_watermark_from_pdf' %}">Remove watermark from pdf</a>
+    </div>
+
+    <div>
+        <a href="{% url 'processor:convert_pdf_to_pngs' %}">Convert PDF to PNGs</a>
+    </div>
+
+    <div>
+        <a href="{% url 'processor:merg_pdfs' %}">Merge PDFs</a>
+    </div>
+
+    <div>
+        <a href="{% url 'processor:extract_text_from_pdf' %}">Extract text from pdfs</a>
+    </div>
+
+    <br>
+    <div>
+        <a href="">Docx to pdf</a>
+    </div>
+
+{% endblock body %}

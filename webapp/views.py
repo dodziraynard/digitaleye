@@ -130,9 +130,6 @@ def stream_task_progress(request, task_id):
 
 
 class MergePDFsView(ValidateFileMixin):
-    """Merge PDFs 
-
-    """
     template_name = "webapp/merge_pdfs.html"
     form_class  = PDFOperationOrderForm
     acceptable_extensions = ["pdf"]

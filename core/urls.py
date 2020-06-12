@@ -5,7 +5,7 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("", include("webapp.urls")),
+    path("", include("processor.urls")),
     re_path(r"^celery-progress/", include("celery_progress.urls"))
 ]
 

@@ -6,9 +6,9 @@
     {% endif %}
     
     <form action="" method="POST" enctype="multipart/form-data">
-        <h1>Convert to selectable pdf</h1>
+        <h1>Merge PDFs</h1>
         {% csrf_token %}
-        <input type="file" name="pdf" required>
+        <input type="file" name="pdf" required multiple>
 
         <button type="submit">Submit</button>
     </form>
